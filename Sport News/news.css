@@ -1,0 +1,591 @@
+body {
+
+  margin: 0px;
+  width: 100%;
+  background-color: #e3e3e3;
+}
+
+.registerFORM {
+  font-family: sans-serif;
+  font-size: 10px;
+  color: #222;
+
+}
+
+form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 50px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 2px;
+}
+
+h2 {
+  margin: 0 0 50px 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: darken(#e5e5e5, 50%);
+  border-bottom: solid 1px #e5e5e5;
+}
+
+p {
+  margin: 0 0 3em 0;
+  position: relative;
+}
+
+input[type="text"],
+input[type="password"] {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  font-size: 1.6em;
+  padding: .8em .5em;
+  border-radius: 2px;
+}
+
+span {
+  display: block;
+  background: #F9A5A5;
+  padding: 2px 5px;
+  color: #666;
+  position: absolute;
+  bottom: 0px;
+  left: 80px;
+}
+
+input {
+  background: rgba(148, 175, 101, 1);
+  border-radius: 2px;
+  border: none;
+  color: rgb(10, 9, 9);
+  cursor: pointer;
+  display: block;
+  font-size: 2em;
+  line-height: 1.6em;
+  margin: 2em 0 0;
+  outline: none;
+  padding: .8em 0;
+  width: 100%;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+
+label {
+  position: absolute;
+  left: 8px;
+  top: 12px;
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  padding: 4px 10px;
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0);
+  top: -11px;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+}
+
+#form2 {
+
+  border: 3px solid #f1f1f1;
+  font-family: sans-serif;
+  font-size: 10px;
+  color: #222;
+
+}
+
+#input_email,
+#input_password {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 0px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+  border-style: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cancelbtn :hover {
+  background-color: green;
+}
+
+
+.container2 {
+  padding: 16px;
+  background-color: #f1f1f1;
+
+
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+  background-color: #f1f1f1;
+
+}
+
+
+.img_logo {
+  max-width: 100px;
+  width: 100%;
+  padding: 5px 20px 5px 20px;
+  height: 70px;
+  opacity: 2;
+  background-color: blue;
+
+}
+
+#prijava {
+  border-style: none;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  margin: auto;
+}
+
+.site_header_logo {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+}
+
+#prijava-registracija {
+  position: absolute;
+  right: 0px;
+}
+
+.site-headerBody {
+  margin: 0px;
+  background-color: blue;
+}
+
+.SPORT {
+  background-color: red;
+  margin: 0px;
+  padding: 20px 5px 20px 10px;
+  font-size: xx-large;
+  color: white;
+  font-family: cursive;
+}
+
+.NEWS {
+  padding: 20px 10px 20px 5px;
+  margin: 0px;
+  font-size: xx-large;
+  color: white;
+  font-family: cursive;
+}
+
+#h1-news {
+  text-align: center;
+  font-family: cursive;
+  color: blue;
+  margin: auto;
+}
+
+.Search {
+  position: absolute;
+  right: 50px;
+
+  display: flex;
+}
+
+.BTNS {
+  border-style: none;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  margin: auto;
+
+
+}
+
+.BTNS2 {
+  border-style: none;
+  font-size: large;
+  background-color: blue;
+  color: white;
+  font-family: cursive;
+  cursor: pointer;
+  margin: auto;
+
+}
+
+.BTNS:hover {
+  background-color: rgba(73, 84, 179, 0.801);
+  color: red;
+}
+
+.input_search {
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 16px !important;
+  border: 1px solid rgb(255, 255, 255) !important;
+  background: none !important;
+  border-radius: 3px !important;
+  margin: auto !important;
+
+}
+
+.input_search:hover {
+  background-color: #fff !important;
+}
+
+.itemList {
+  display: flex;
+  font-family: inherit;
+  align-items: center;
+  list-style: none;
+  color: white;
+  font-size: large;
+}
+
+.itemList li {
+  padding: 10px;
+}
+
+.itemList li:hover {
+  background-color: rgba(73, 84, 179, 0.801);
+  color: red;
+  cursor: pointer;
+}
+
+.More_ulList {
+  display: flex;
+  text-align: center;
+  list-style: none;
+  margin: 0px;
+  justify-content: center;
+  font-family: inherit;
+  display: none;
+  font-size: large;
+
+
+}
+
+.More_ulList li {
+  padding: 5px;
+  color: white;
+  background-color: blue;
+  border-style: none;
+  font-family: cursive;
+
+}
+
+.itemList button {
+  color: white;
+  background-color: blue;
+  border-style: none;
+  font-family: cursive;
+  cursor: pointer;
+
+}
+
+.itemList button:hover {
+  background-color: rgba(73, 84, 179, 0.801);
+  color: red;
+  cursor: pointer;
+
+}
+
+.More_ulList li:hover {
+  background-color: rgba(73, 84, 179, 0.801);
+  color: red;
+  cursor: pointer;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.imgages_slider {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+.bottom-left a {
+  background-color: rgba(0, 0, 0, .5);
+  color: rgb(255, 255, 255);
+  font-family: cursive;
+  font-size: x-large;
+}
+
+.img-holder img {
+  width: 300px;
+  height: 200px;
+
+}
+
+.img-holder {
+  background-color: rgb(194, 196, 211);
+  max-width: 300px;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0px 0px 13px 0px grey;
+  color: black;
+  position: relative;
+  display: none;
+}
+
+.img-wrapper {
+  margin: 10px 20px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.img-holder h1 {
+  font-family: cursive;
+  text-align: center;
+  font-size: 15px;
+}
+
+.img-holder h2 {
+  font-family: inherit;
+  font-size: 17px;
+}
+
+.container:hover {
+  cursor: pointer;
+}
+
+.container img {
+  filter: brightness(0.6);
+
+  margin-bottom: 1rem;
+  transition: filter 0.6s ease-in-out;
+
+}
+
+.container:hover img {
+  filter: none;
+}
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  position: relative;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 4px;
+  background-color: rgb(243, 115, 143);
+  left: 50%;
+  bottom: -10px;
+  transition: all 0.4s ease-in-out;
+
+}
+
+.container:hover .title::after {
+  width: 100%;
+  left: 0;
+
+}
+
+.forLike img {
+  width: 20px;
+  height: auto;
+  margin: 0px auto;
+
+}
+
+.forLike {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.likeButton {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-style: none;
+  background-color: rgb(194, 196, 211);
+}
+
+.forLike :hover {
+  background-color: rgb(243, 115, 143);
+  border-radius: 20px;
+}
+
+.Like {
+  margin: 0px auto;
+}
+
+.komentari,
+.Podijeli {
+  background-color: rgb(194, 196, 211);
+  border-style: none;
+  font-family: inherit;
+}
+
+.komentari {
+  display: none;
+}
+
+.dellcom {
+  background-color: rgb(194, 196, 211);
+  color: #222;
+  font-family: inherit;
+}
+
+.dellcom button {
+  border-style: none;
+  background-color: rgb(194, 196, 211);
+
+}
+
+#comment-box,
+#post {
+  border: none;
+  border-radius: 5px;
+}
+
+#post:hover {
+  background-color: deeppink;
+}
+
+.forComment {
+  display: none;
+}
+
+.modalBtn {
+  position: fixed;
+  z-index: 3;
+  padding-top: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+.PopUpText {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+}
+footer{
+  background-color: rgb(31, 34, 185);
+  color: #fff;
+  font-family: inherit;
+}
+.footer-text{
+  margin-top: 20px;
+  width: 400px;
+  text-align: inherit;
+}
+.footer-part1{
+  display: flex;
+  justify-content: space-around;
+}
+.addComment{
+  padding-top: 25px;
+}
+.Contacts p{
+  padding: 0px;
+  margin: 0px;
+}
+.links p{
+  padding: 0px ;
+  margin: 10px;
+  cursor: pointer;
+  
+}
+.links p:hover{
+  text-decoration: underline;
+}
+.footer-part2{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+ 
+}
+.footer-part2 p{
+ margin: auto;
+ border-left: 1px solid rgba(255, 255, 255, 0.1);
+ padding: 10px;
+ cursor: pointer;
+}
+.footer-part2 p:hover{
+ text-decoration: underline;
+}
+.footer-part2 p a{
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="news.css">
+  <title>News Title</title>
+</head>
+
+<body>
+  <form style="display:none;" class="registerFORM">
+    <h2>Sign Up</h2>
+    <p>
+      <label for="Email" class="floatLabel">Email</label>
+      <input id="Email" name="Email" type="text">
+      <span id="spanValidation"></span>
+    </p>
+    <p>
+      <label for="password" class="floatLabel">Password</label>
+      <input id="password" name="password" type="password">
+      <span id="Pasword_Validation_span"></span>
+    </p>
+    <p>
+      <label for="confirm_password" class="floatLabel">Confirm Password</label>
+      <input id="confirm_password" name="confirm_password" type="password">
+      <span class="confirm_Pasword_span"></span>
+    </p>
+    <p>
+      <input type="submit" onclick="createAcount(event)" value="Create My Account" id="submit">
+    </p>
+  </form>
+
+
+
+
+
+
+  <form id="form2">
+
+    <div class="container">
+      <p>
+        <label for="uname"><b>Email</b></label>
+        <input id="input_email" type="text" placeholder="Enter Email" required>
+        <span id="spanValidation2"></span>
+      </p>
+      <p>
+        <label for="psw"><b>Password</b></label>
+        <input id="input_password" type="password" placeholder="Enter Password" required>
+        <span id="error"></span>
+      </p>
+      <button type="submit" onclick="LoginBtn(event)">Login</button>
+
+    </div>
+  </form>
+
+
+  <div class="site-header">
+    <div class="site-headerBody">
+      <div class="site_header_logo">
+        <img class="img_logo" src="images/logo.png">
+        <p class="SPORT">SPORT</p>
+        <p class="NEWS">NEWS</p>
+        <ul class="itemList">
+          <li id="pocetnaSTR">POCETNA STRANICA</li>
+          <li>SVI SPORTOVI</li>
+          <li>KOŠARKA</li>
+          <li>FUDBAL</li>
+          <li>ODBOJKA</li>
+         
+          <button class="CloseBTN" onclick="More()"> Više</button>
+        </ul>
+        <div id="prijava-registracija">
+          <button id="prijava">Prijavi se</button>
+          <button class="BTNS" onclick="LoginButton()">Registruj se</button>
+        </div>
+
+      </div>
+    </div>
+    <ul class="More_ulList">
+      <li>Facebook</li>
+      <li>Instangram</li>
+      <li>twitter</li>
+      <li>Logout</li>
+
+
+    </ul>
+
+    <h1 id="h1-news" style="text-align: center; font-family: cursive; color: blue;">NAJVAZNIJE VIJESTI </h1>
+
+    <div name="POCETNA STRANICA" class="slideshow-container">
+
+      <div class="mySlides">
+
+
+        <div class="imgages_slider">
+
+          <p class="bottom-left"><a
+              href="">
+              </a></p>
+          <img class="slike" style="width:100%">
+        </div>
+        <div>
+          <p style="display: none;" class="bottom-left"></p>
+          <img class="slike"  style="width:100%; display: none;">
+        </div class="imgages_slider">
+        <div class="imgages_slider">
+          <p style="display: none;" class="bottom-left"></p>
+          <img class="slike"  style="width:100%; display: none;">
+        </div>
+      </div>
+      <a class="prev" onclick="minusSlides()">&#10094;</a>
+      <a class="next" onclick="plusSlides()">&#10095;</a>
+    </div>
+
+
+
+
+    <div class="img-wrapper">
+
+      <div name="KOŠARKA" class="img-holder container">
+        <img id="img3">
+        <h1 id="title3" class="title"></h1>
+        <h2 id="description3"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="KOŠARKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum3"></span>
+      </div>
+      <div name="FUDBAL" id="url1" class="img-holder container">
+        <img id="img1">
+        <h1 id="title1" class="title"></h1>
+        <h2 id="description1"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="FUDBAL" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum1"></span>
+      </div>
+      <div name="KOŠARKA" class="img-holder container">
+        <img id="img4">
+        <h1 id="title4" class="title"></h1>
+        <h2 id="description4"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="KOŠARKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum4"></span>
+      </div>
+      <div name="ODBOJKA" class="img-holder container">
+        <img id="img6">
+        <h1 id="title6"></h1>
+        <h2 id="description6" style="padding-bottom: 20px;"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="ODBOJKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum6"></span>
+      </div>
+      <div name="KOŠARKA" class="img-holder container">
+        <img id="img5">
+        <h1 id="title5" class="title"></h1>
+        <h2 id="description5"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="KOŠARKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum5"></span>
+      </div>
+      <div name="ODBOJKA" class="img-holder container">
+        <img id="img7">
+        <h1 id="title7"></h1>
+        <h2 id="description7"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="ODBOJKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum7"></span>
+      </div>
+
+      <div name="ODBOJKA" class="img-holder container">
+        <img id="img8">
+        <h1 id="title8"></h1>
+        <h2 id="description8"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="ODBOJKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum8"></span>
+      </div>
+      <div name="FUDBAL" id="url1" class="img-holder container">
+        <img id="img2">
+        <h1 id="title2" class="title"></h1>
+        <h2 id="description2"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+          <!-- <button name="FUDBAL" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum2"></span>
+      </div>
+      <div name="ODBOJKA" id="url1" class="img-holder container">
+        <img id="img9">
+        <h1 id="title9" class="title"></h1>
+        <h2 id="description9"></h2>
+        <div class="forLike">
+          <button class="likeButton" onclick="Cliced(this)"><img src="images/like.png">
+            <p class="Like">Like</p>
+          </button>
+          <button class="komentari" onclick="CommentBtn(this)">Komentar</button>
+         <!--<button name="ODBOJKA" onclick="Shere(this)" class="Podijeli">Podijeli</button> -->
+        </div>
+        <input type="text" placeholder="some Comment..." class="forComment">
+        <p class="addComment"></p>
+        <span id="datum9"></span>
+      </div>
+
+    </div>
+
+
+    <footer>
+      <div class="footer-part1">
+        <div>
+      <p class="footer-text" > Sav sadržaj je u vlasništvu SportNews. Kopiranje sadržaja nije dozvoljeno. Prenošenje sadržaja dozvoljeno je isključivo uz pismenu dozvolu i jasno istaknuto navođenje izvora sadržaja.</p>
+      <p>©  2020 Company - All Rights Reserved.</p>
+        </div>
+      <div class="Contacts">
+        <h2>Contacts</h2>
+        <p>Adress:</p>
+        <p>27. Juli, Srbac, Republika Srpska</p>
+        <p>Email:</p>
+        <p>bojan.vecernovic@gmail.com</p>
+        <p>Phones:</p>
+        <p>+38766193978</p>
+      </div>
+      <div class="links">
+        <h2>Links</h2>
+        <p>About</p>
+        <p>Project</p>
+        <p>Blog</p>
+      </div>
+      </div>
+      <div class="footer-part2">
+        <p><a href="https://www.facebook.com/rs.sputniknews">FACEBOOK</a></p>
+        <p><a href="https://www.instagram.com/sputnik_news/">INSTANGRAM</a></p>
+        <p><a href="https://twitter.com/rs_sputnik">TWITTER</a></p>
+        <p><a href="https://www.youtube.com/channel/UCigTdpIRCUWfhDCOF95nfxw">YOUTUBE</a></p>
+      </div>
+    </footer>
+
+
+  </div>
+  </div>
+
+
+  <script src="https://kit.fontawesome.com/407c4bb2e3.js" crossorigin="anonymous"></script>
+  <script src="news.js"></script>
+</body>
+
+</html>
